@@ -21,9 +21,9 @@ namespace LatencyAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<HttpResponseMessage>> TestLatencyPostAsync([FromQuery] string requestUri)
+        public async Task<ActionResult<HttpResponseMessage>> TestLatencyPostAsync([FromQuery] string requestUri, [FromQuery] int numCalls, [FromQuery] int delayInMillis)
         {
-            return Ok(await _latencyService.TestLatencyPostAsync(requestUri));
+            return Ok(await _latencyService.TestLatencyPostAsync(requestUri, numCalls, delayInMillis));
         }
 
     }

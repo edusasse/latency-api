@@ -1,6 +1,0 @@
-docker run -p 8080:8080 latency-test-dotnet:latest
-
-
-docker build -t latency-test-dotnet .
-docker tag latency-test-dotnet sassetech/latency-test-dotnet:latest
-docker push sassetech/latency-test-dotnet:latest

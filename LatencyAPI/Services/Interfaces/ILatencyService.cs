@@ -6,6 +6,6 @@ namespace LatencyAPI.Services.Interfaces
 {
     public interface ILatencyService
     {
-        Task<string> TestLatencyPostAsync(string requestUri);
+        Task<string> TestLatencyPostAsync(string requestUri, int numCalls, int delayInMillis);
     }
 }
