@@ -15,7 +15,7 @@ builder.Services.AddScoped<ILatencyService, LatencyService>();
 
 var app = builder.Build();
 
-app.UseApplicationInsightsRequestTelemetry();
+//app.UseApplicationInsightsRequestTelemetry();
 
 // Configure the HTTP request pipeline.
 //if (app.Environment.IsDevelopment())
